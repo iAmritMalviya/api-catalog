@@ -53,6 +53,23 @@ const app = createApp({
   },
 });
 
+const getHardCodedData = () =>
+  Promise.resolve({
+    quadrants: [{ id: 'infrastructure', name: 'Infrastructure' }],
+    rings: [{ id: 'use', name: 'USE', color: '#93c47d' }],
+    entries: [
+      {
+        moved: 0,
+        ring: 'use',
+        url: '#',
+        key: 'github-actions',
+        id: 'github-actions',
+        title: 'GitHub Actions',
+        quadrant: 'infrastructure',
+      },
+    ],
+  });
+
 const routes = (
   <FlatRoutes>
     <Route path="/" element={<Navigate to="catalog" />} />
@@ -74,9 +91,8 @@ const routes = (
     </Route>
     <Route path="/create" element={<ScaffolderPage />} />
     <Route path="/api-docs" element={<ApiExplorerPage />} />
-    <Route
-      path="/tech-radar"
-      element={<TechRadarPage width={1500} height={800} />}
+    {/* <Route path="/tech-radar" element={<TechRadarPage width={1500} height={800} />} */}
+    <Route path="/tech-radar" element={<TechRadarPage width={1500} height={800} />}
     />
     <Route
       path="/catalog-import"
