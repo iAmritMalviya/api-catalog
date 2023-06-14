@@ -35,6 +35,7 @@ import { RequirePermission } from '@backstage/plugin-permission-react';
 import { catalogEntityCreatePermission } from '@backstage/plugin-catalog-common/alpha';
 import { ComponentPage } from '@internal/plugin-component';
 import { SoftwareCatalogPage } from '@internal/plugin-software-catalog';
+// import { ApiExplorerPage } from '@backstage/plugin-api-docs';
 
 const app = createApp({
   apis,
@@ -107,10 +108,12 @@ const routes = (
     <Route path="/search" element={<SearchPage />}>
       {searchPage}
     </Route>
+
     <Route path="/settings" element={<UserSettingsPage />} />
     <Route path="/catalog-graph" element={<CatalogGraphPage />} />
     <Route path="/component" element={<ComponentPage />} />
     <Route path="/software-catalog" element={<SoftwareCatalogPage />} />
+
   </FlatRoutes>
 );
 
