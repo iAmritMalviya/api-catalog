@@ -1,0 +1,13 @@
+apiVersion: backstage.io/newedit
+kind: Component
+metadata:
+  name: api-catalog
+  description: adding new software in catalog.
+  # Example for optional annotations
+  # annotations:
+  #   github.com/project-slug: backstage/backstage
+  #   backstage.io/techdocs-ref: dir:.
+spec:
+  type: website
+  owner: amrit@example.com
+  lifecycle: finished
