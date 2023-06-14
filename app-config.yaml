@@ -39,7 +39,7 @@ integrations:
     - host: github.com
       # This is a Personal Access Token or PAT from GitHub. You can find out how to generate this token, and more information
       # about setting up the GitHub integration here: https://backstage.io/docs/getting-started/configuration#setting-up-a-github-integration
-      token: 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
+      token: ${GITHUB_TOKEN}
     ### Example for how to add your GitHub Enterprise instance using the API:
     # - host: ghe.example.net
     #   apiBaseUrl: https://ghe.example.net/api/v3
@@ -64,8 +64,14 @@ techdocs:
     type: 'local' # Alternatives - 'googleGcs' or 'awsS3'. Read documentation for using alternatives.
 
 auth:
-  # see https://backstage.io/docs/auth/ to learn about auth providers
-  providers: {}
+  # see https://backstage.io/docs/auth/ to learn about auth providers   
+  providers:
+    github:
+      development:
+        clientId: Iv1.423397acbb400290
+        clientSecret: fde1dcb468e951c22d56b0fb1eb4215d5ea7bfbd
+        ## uncomment if using GitHub Enterprise
+        # enterpriseInstanceUrl: ${AUTH_GITHUB_ENTERPRISE_INSTANCE_URL}
 
 scaffolder:
   # see https://backstage.io/docs/features/software-templates/configuration for software template options
