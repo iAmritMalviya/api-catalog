@@ -1,13 +1,8 @@
-apiVersion: backstage.io/amrit
-kind: Component
+apiVersion: backstage.io/v1alpha1
+kind: Location
 metadata:
-  name: api-catalog
-  description: new application in the market.
-  # Example for optional annotations
-  # annotations:
-  #   github.com/project-slug: backstage/backstage
-  #   backstage.io/techdocs-ref: dir:.
+  name: example-resources
+  description: A collection of all Backstage example resources
 spec:
-  type: website
-  owner: bhanu@example.com
-  lifecycle: experimental
+  targets:
+    - ./resources/artists-db-resource.yaml
