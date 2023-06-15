@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: news-api
+  description: for getting the news
+spec:
+  type: openapi
+  lifecycle: production
+  owner: dev-amrit
+  system: dev-portal
+  definition: |
+    openapi: "3.0.0"
+    info:
+      version: 1.0.0
+      title: newsAPI
+      license:
+        name: MIT
+    servers:
+      - url: https://newsapi.org/v2
+    paths:
+      /everything?q=tesla&from=2023-05-14&sortBy=publishedAt&apiKey=8ed8502797634ef1b1f95f9003634989:
+        get:
+          summary: get news
