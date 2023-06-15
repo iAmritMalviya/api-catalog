@@ -2817,7 +2817,7 @@
     lodash "^4.17.21"
     luxon "^3.0.0"
 
-"@backstage/plugin-api-docs@^0.9.3", "@backstage/plugin-api-docs@^0.9.4":
+"@backstage/plugin-api-docs@^0.9.4":
   version "0.9.4"
   resolved "https://registry.yarnpkg.com/@backstage/plugin-api-docs/-/plugin-api-docs-0.9.4.tgz#52efd42eb684d5887384b992070174e31f599b9c"
   integrity sha512-EE6vf3mIScH7cFwSCvNsQoE6oVBRFIv/k+U0jlV0pDVKQUSPBETBIDLvO4Z9Mlg16czMXZ4PEa2i3bFL+GhPSQ==
@@ -7393,7 +7393,7 @@
   resolved "https://registry.yarnpkg.com/@types/range-parser/-/range-parser-1.2.4.tgz#cd667bcfdd025213aafb7ca5915a932590acdcdc"
   integrity sha512-EEhsLsD6UsDM1yFhAvy0Cjr6VwmpMWqFBCb9w07wVugF7w9nfajxLuVmngTIpgS6svCnm6Vaw+MZhoDCKnOfsw==
 
-"@types/react-dom@*", "@types/react-dom@<18.0.0":
+"@types/react-dom@*", "@types/react-dom@<18.0.0", "@types/react-dom@^17":
   version "17.0.20"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.20.tgz#e0c8901469d732b36d8473b40b679ad899da1b53"
   integrity sha512-4pzIjSxDueZZ90F52mU3aPoogkHIoSIDG+oQ+wQK7Cy2B9S+MvOqY0uEA/qawKz381qrEDkvpwyt8Bm31I8sbA==
@@ -8144,7 +8144,7 @@ anymatch@^3.0.3, anymatch@~3.1.2:
     "@backstage/core-components" "^0.13.1"
     "@backstage/core-plugin-api" "^1.5.1"
     "@backstage/integration-react" "^1.1.13"
-    "@backstage/plugin-api-docs" "^0.9.3"
+    "@backstage/plugin-api-docs" "^0.9.4"
     "@backstage/plugin-catalog" "^1.11.0"
     "@backstage/plugin-catalog-common" "^1.0.13"
     "@backstage/plugin-catalog-graph" "^0.2.30"
@@ -8163,6 +8163,7 @@ anymatch@^3.0.3, anymatch@~3.1.2:
     "@backstage/plugin-user-settings" "^0.7.3"
     "@backstage/theme" "^0.3.0"
     "@internal/plugin-component" "^0.1.0"
+    "@internal/plugin-red-panda" "^0.1.0"
     "@internal/plugin-software-catalog" "^0.1.0"
     "@material-ui/core" "^4.12.2"
     "@material-ui/icons" "^4.9.1"

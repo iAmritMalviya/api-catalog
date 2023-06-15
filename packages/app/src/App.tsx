@@ -36,6 +36,7 @@ import { catalogEntityCreatePermission } from '@backstage/plugin-catalog-common/
 import { ComponentPage } from '@internal/plugin-component';
 import { SoftwareCatalogPage } from '@internal/plugin-software-catalog';
 // import { ApiExplorerPage } from '@backstage/plugin-api-docs';
+import { RedPandaPage } from '@internal/plugin-red-panda';
 
 const app = createApp({
   apis,
@@ -114,6 +115,7 @@ const routes = (
     <Route path="/component" element={<ComponentPage />} />
     <Route path="/software-catalog" element={<SoftwareCatalogPage />} />
 
+<Route path="/red-panda" element={<RedPandaPage />} />
   </FlatRoutes>
 );
 
